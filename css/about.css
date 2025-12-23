@@ -1,0 +1,142 @@
+@import url("variable.css");
+
+/* Стили для страницы о нас */
+.about-main {
+    padding: 2rem 0;
+}
+
+main {
+    margin: 2rem;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, var(--lavender), var(--cream));
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: #4a5d5f;
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: #8a9a9c;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .story-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.story-text p {
+    margin-bottom: 1rem;
+    color: #8a9a9c;
+    line-height: 1.8;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+}
+
+.about-mission {
+    margin: 3rem 0;
+}
+
+.mission-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .mission-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.mission-card {
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    transition: transform .3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+}
+
+.mission-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #4a5d5f;
+    margin-bottom: 1rem;
+}
+
+.mission-card p {
+    color: #8a9a9c;
+    line-height: 1.6;
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .team-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.team-member {
+    text-align: center;
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    border: 1px solid #e0e0e0;
+    transition: transform .3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #e0e0e0;
+}
+
+.team-member h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #4a5d5f;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: #8a9a9c;
+}

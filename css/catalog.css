@@ -1,0 +1,90 @@
+@import url("variable.css");
+
+/* Стили для каталога */
+.catalog-main {
+    padding: 2rem 0;
+}
+
+.catalog-hero {
+    background: linear-gradient(135deg, var(--light-green), var(--primary-pink));
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.catalog-hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: #4a5d5f;
+    margin-bottom: 1rem;
+}
+
+.catalog-hero p {
+    font-size: 1.2rem;
+    color: #8a9a9c;
+}
+
+.catalog-filters {
+    padding: 2rem 0;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .filters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.filter-group h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #4a5d5f;
+    margin-bottom: 1rem;
+}
+
+.filter-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-group li {
+    margin-bottom: 0.5rem;
+}
+
+.filter {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #8a9a9c;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.filter:hover,
+.filter.active {
+    background: #8a9a9c;
+    color: white;
+    border-color: #8a9a9c;
+}
+
+.price-range {
+    padding: 1rem 0;
+}
+
+.slider {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.price-values {
+    display: flex;
+    justify-content: space-between;
+    color: #8a9a9c;
+    font-size: 0.9rem;
+}
